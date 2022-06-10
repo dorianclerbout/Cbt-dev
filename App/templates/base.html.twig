@@ -1,19 +1,132 @@
 <!DOCTYPE html>
-<html>
-    <head>
-        <meta charset="UTF-8">
-        <title>{% block title %}Welcome!{% endblock %}</title>
-        <link rel="icon" href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 128 128%22><text y=%221.2em%22 font-size=%2296%22>⚫️</text></svg>">
-        {# Run `composer require symfony/webpack-encore-bundle` to start using Symfony UX #}
+<html lang="en">
+<head>
+ 
+     <meta charset="UTF-8">
+     <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+     <meta name="description" content="">
+     <meta name="keywords" content="">
+     <meta name="team" content="">
+     <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+
+        <title>{% block title %}Cbt Development{% endblock %}</title>
+       
         {% block stylesheets %}
-            {{ encore_entry_link_tags('app') }}
+          	
+
+
+     <link rel="stylesheet" href="{{ asset('css/bootstrap.min.css') }}">
+     <link rel="stylesheet" href="{{ asset('css/vegas.min.css') }}">
+     <link rel="stylesheet" href="{{ asset('css/font-awesome.min.css') }}">
+ <link rel="stylesheet" href="{{ asset('css/templatemo-style.css') }}">
         {% endblock %}
 
         {% block javascripts %}
-            {{ encore_entry_script_tags('app') }}
+         
+
+              <script src="js/jquery.js') }}"></script>
+     <script src="{{ asset('js/bootstrap.min.js') }}"></script>
+     <script src="{{ asset('js/vegas.min.js') }}"></script>
+     <script src="{{ asset('js/countdown.js') }}"></script>
+     <script src="{{ asset('js/init.js') }}"></script>
+     <script src="{{ asset('js/custom.js') }}"></script>
+
         {% endblock %}
     </head>
     <body>
+     <!-- PRE LOADER -->
+    
+     <!-- GRID LINE -->
+    <section class="grid">
+         <div class="container">
+            <div class="row">
+
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+              <div class="col-md-2 col-sm-2">
+                <div class="grid-line"></div>
+              </div>
+
+            </div>
+         </div>
+    </section>
+
+    
+    <div class="menu-bg"></div>
+    <div class="menu-burger">☰</div>
+
+    <div class="menu-items">
+       <div class="container">
+         <div class="row">
+           <div class="col-md-offset-2 col-md-4 col-sm-6">
+            <h1>Navigations</h1>
+             <ul class="menu">
+                <li><a href="#">Accueil</a></li>
+             
+            </ul>
+           </div>
+
+           <div class="col-md-4 col-sm-6">
+             <address>
+               
+               <div class="google-map">
+               
+               </div>
+             </address>
+           </div> 
+
+           <div class="col-md-12 col-sm-12">
+             <ul class="social-icon">
+           
+             </ul>
+           </div>
+         </div>
+       </div>
+    </div>
+ <!-- HOME -->
+     <section id="home">
+        <div class="overlay"></div>
+          <div class="container">
+               <div class="row">
+
+                    <div class="col-md-12 col-sm-12">
+                         <div class="home-info">
+                              <h1>Nous sommes presque prêts !</h1>
+
+                              
+                              <!-- You can change the date time in init.js file -->
+                              <ul class="countdown">
+                                   <li>
+                                        <span class="days">14</span>
+                                        <h3>Jours</h3>
+                                   </li>
+                                   <li>
+                                        <span class="hours">10</span>
+                                        <h3>heures</h3>
+                                   </li>
+                                  
+                              </ul>
+                              <div class="subscribe-form">
+                               
+                              </div>
+                         </div>
+                    </div>
+
+               </div>
+          </div>
+     </section>
+
+  
         {% block body %}{% endblock %}
     </body>
 </html>
